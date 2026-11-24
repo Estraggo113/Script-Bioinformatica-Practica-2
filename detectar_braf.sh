@@ -65,4 +65,8 @@ $linea"
         fi
     done
     echo "Resultado guardado en $salida."
+    #Muestra el numero de pacientes que pueden aspirar al tratamiento
+    candidatos=$(grep -c '^>' "$salida")
+    echo "Número de candidatos: $candidatos"
+
 fi
